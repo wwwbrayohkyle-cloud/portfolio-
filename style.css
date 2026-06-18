@@ -176,4 +176,22 @@ section.show {
         transform: scale(1);
     }
 }
+
+.socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    font-size: 30px;
+    color: #0f172a;
+    transition: 0.3s ease;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+    color: #2563eb;
+}
 }
