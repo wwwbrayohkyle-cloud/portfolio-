@@ -106,4 +106,74 @@ footer{
     nav ul li{
         margin:10px 0;
     }
+
+    /* ===== ANIMATIONS ===== */
+
+.hero h1 {
+    animation: fadeDown 1s ease-in-out;
+}
+
+.hero p {
+    animation: fadeUp 1.2s ease-in-out;
+}
+
+.hero img {
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Button hover animation */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #1d4ed8;
+}
+
+/* Section reveal animation */
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframes */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 }
