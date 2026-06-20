@@ -179,47 +179,71 @@ section.show {
 
 .socials{
     display:flex;
-    justify-content:center;
     flex-wrap:wrap;
-    gap:25px;
-    margin-top:30px;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
 }
 
 .social-card{
-    background:#1e293b;
-    color:white;
-
-    width:140px;
-
-    padding:20px;
-
-    border-radius:15px;
+    width:160px;
+    height:180px;
 
     display:flex;
     flex-direction:column;
-
+    justify-content:center;
     align-items:center;
 
     text-decoration:none;
+    color:white;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(10px);
 
     transition:0.4s ease;
 
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    border:1px solid rgba(255,255,255,0.2);
+
+    background:rgba(255,255,255,0.05);
+
+    box-shadow:0 0 20px rgba(255,255,255,0.1);
 }
 
 .social-card i{
-    font-size:4rem;
-    margin-bottom:10px;
+    font-size:4.5rem;
+    margin-bottom:15px;
 }
 
 .social-card span{
-    font-size:1rem;
+    font-size:1.1rem;
     font-weight:600;
 }
 
 .social-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    transform:translateY(-10px) scale(1.05);
+}
+
+/* Individual Glow Colors */
+
+.github:hover{
+    box-shadow:0 0 30px rgba(255,255,255,0.7);
+}
+
+.facebook:hover{
+    box-shadow:0 0 30px rgba(24,119,242,0.8);
+}
+
+.instagram:hover{
+    box-shadow:0 0 30px rgba(225,48,108,0.8);
+}
+
+.linkedin:hover{
+    box-shadow:0 0 30px rgba(0,119,181,0.8);
+}
+
+.whatsapp:hover{
+    box-shadow:0 0 30px rgba(37,211,102,0.8);
 }
 
 
